@@ -13,8 +13,6 @@ function run () {
     contextIsolation: true
   })
 
-  require('jest')
-
   let options = {
     moduleDirectories: ["<rootDir>/tests"],
     env: './src/jest-environment-electron'
