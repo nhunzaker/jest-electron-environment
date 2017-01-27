@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Jest</title>
+    <style>
+      body {
+        background: #225;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        color: #eef;
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 7px 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Executing tests...</h2>
+    <p>Please reference the console for output.</p>
+
+    <script>
+      var jest = require('jest')
+      var qs = require('querystring')
+      var options = qs.parse(window.location.search)
+
+      jest.runCLI(options, __dirname, (content) => {
+        window.close()
+      })
+    </script>
+  </body>
+</html>

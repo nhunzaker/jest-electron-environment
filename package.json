@@ -1,0 +1,16 @@
+{
+  "name": "jest-electron",
+  "version": "1.0.0",
+  "description": "Executing jest with Electron",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "keywords": ["jest", "electron"],
+  "author": "Nate Hunzaker <nate.hunzaker@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^17.0.3",
+    "electron": "^1.4.1"
+  }
+}
